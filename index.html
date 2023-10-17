@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Tip Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container my-4">
+        <h1>JavaScript Tip Calculator</h1>
+        <div class="calculator row">
+            <div class="col-lg-4 col-sm-12 my-3">
+                <label for="billAmount">Bill Amount</label>
+                <input type="number" id="billAmount" class="form-control input-fields my-2">
+            </div>
+            <div class="col-lg-4 col-sm-12 my-3">
+                <label for="tipPercentage">Tip Percentage</label>
+                <input type="number" id="tipPercentage" class="form-control input-fields my-2">
+            </div>
+            <div class="col-lg-4 col-sm-12 my-3">
+                <label for="numberOfPeople">Number Of People</label>
+                <input type="number" id="numberOfPeople" class="form-control input-fields my-2">
+            </div>
+            
+        </div>
+
+        <div id="results" class="my-2">
+            <h1>Results</h1>
+            <p id="totalBill">Total Bill : <span></span></p>
+            <p>Total Tip : <span id="totalTip"></span></p>
+            <p>Total Bill Per People : <span id="totalBillPerPeople"></span></p>
+            <div class="my-2">
+                <p id="resultsSummary">Summary : </p>
+            </div>
+        </div>
+
+
+        <div class="result-btn my-1">
+            <button type="button" id="results-btn" class="btn">Calculate</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
