@@ -12,9 +12,9 @@ resultsBtn.addEventListener('click', function () {
     const tip = (billAmount * tipPercentage) / 100;
     const totalBillPerPerson = (billAmount + tip) / numberOfPeople;
 
-    totalBill.innerHTML = `Total Bill: $${billAmount.toFixed(2)}`;
-    totalTip.innerHTML = `Total Tip: $${tip.toFixed(2)}`;
-    totalBillPerPeople.innerHTML = `Total Bill Per Person: $${totalBillPerPerson.toFixed(2)}`;
+    totalBill.innerHTML = `Total Bill : $${billAmount.toFixed(2)}`;
+    totalTip.innerHTML = `Total Tip : $${tip.toFixed(2)}`;
+    totalBillPerPeople.innerHTML = `Total Bill Per Person : $${totalBillPerPerson.toFixed(2)}`;
 
     let summary;
     if (numberOfPeople === 1) {
